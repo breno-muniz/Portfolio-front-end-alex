@@ -1,0 +1,35 @@
+// Cores do Projeto
+
+// Cores primarias
+
+$primary-ligth: #112D4E;
+$primary-normal: #0A192F;
+$primary-dark: #06121F;
+
+
+// Cores secundarias
+
+$secondary-ligth: #A0FFE6;
+$secondary-normal: #64FFDA;
+$secondary-dark: #3BCCA8; 
+
+// Cores de Destaque (textos, bordas)
+
+$emphasis-ligth: #F0F9FF;
+$emphasis-normal: #E6F1FF;
+$emphasis-dark: #CBD7E3;    
+
+// Cores do Background
+
+$bg-color-ligth: #282C34;
+$bg-color-normal: #1E1E1E;
+$bg-color-dark: #121212;
+
+// Gradientes
+
+$gd-depth: linear-gradient(135deg, #0A192F, #1E1E1E);
+$gd-neon-tech: linear-gradient(90deg, #64FFDA, #0A192F);
+$gd-future: linear-gradient(45deg, #0A192F, #64FFDA, #E6F1FF);
+$gd-clean-layout: linear-gradient(180deg, #0A192F, #121212);
+$gd-glow-neon: radial-gradient(circle, #64FFDA, #0A192F);
+
