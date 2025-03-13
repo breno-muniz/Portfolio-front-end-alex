@@ -1,16 +1,13 @@
-<svg width="130" height="131" viewBox="0 0 130 131" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="130" height="131" fill="#F5F5F5"/>
-<g id="Ilustra&#195;&#167;&#195;&#181;es">
-<rect width="820" height="1240" transform="translate(-92 -579)" fill="#1E1E1E"/>
-<g id="Vector 1">
+<svg width="64" height="64" viewBox="0 0 130 131" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Logo" class="logo">
+
 <path d="M1 109.073L48.3007 2L63.2199 42.4211L53.7258 68.3651H72.5444L80.343 90.009H46.0967L38.9762 109.073V127.707L1 109.073Z" fill="#CBD7E3"/>
-<path d="M51.0132 2H80.343L129 111.223L90.8543 130V111.653L51.0132 2Z" fill="url(#paint0_linear_1_2)"/>
+<path d="M51.0132 2H80.343L129 111.223L90.8543 130V111.653L51.0132 2Z" fill="url(#paint0_linear_58_2)"/>
 <path d="M1 109.073L48.3007 2L63.2199 42.4211L53.7258 68.3651H72.5444L80.343 90.009H46.0967L38.9762 109.073V127.707L1 109.073Z" stroke="#112D4E"/>
 <path d="M51.0132 2H80.343L129 111.223L90.8543 130V111.653L51.0132 2Z" stroke="#112D4E"/>
 </g>
-</g>
 <defs>
-<linearGradient id="paint0_linear_1_2" x1="1" y1="66" x2="129" y2="66" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear_58_2" x1="1" y1="66" x2="129" y2="66" gradientUnits="userSpaceOnUse">
 <stop stop-color="#0A192F"/>
 <stop offset="0.5" stop-color="#64FFDA"/>
 <stop offset="1" stop-color="#E6F1FF"/>

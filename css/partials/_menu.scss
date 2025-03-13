@@ -1,0 +1,218 @@
+// Header
+
+header{
+    position: fixed;
+    width: 100%;
+    height: 72px;
+    z-index: 999999;
+    box-shadow: none;
+    background-color: $primary-dark;
+}
+
+
+.nav-desktop{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-height: 100%;
+    margin: 0 auto;
+    padding: 8px 16px;
+    @include responsive(s){
+        display: none;
+    }
+}
+
+.itens-nav{
+    display: flex;
+    justify-content: space-around;
+    gap: 8px;
+    @include responsive(s){
+        display: none;
+    }
+}
+
+.navlink-desktop{
+    transition: 0.5s ease;
+    position: relative;
+    text-decoration: none;
+    justify-content: center;
+    :hover{
+        transition: 0.8s ease;
+        color: $secondary-ligth;
+    }
+
+    &::after{
+        content: '';
+        position: absolute;
+        top: 90%;
+
+        width: 0%;
+        height: 2px;
+        transition: 1s ease;
+
+        background: $gd-future;
+    }
+
+    &:hover{
+        &::after{
+            width: 100%;
+        }
+    }
+
+    @include responsive(s){
+        display: none;
+    }
+}
+
+
+//Mobile
+.menu-mobile{
+    display: none;
+    width: 100%;
+    height: 100vh;
+
+    background: $gd-depth;
+    justify-content: center;
+    align-items: center;
+    
+    opacity: 0;
+    pointer-events: none;
+
+    transform: translate3d(0, -100px, 0);
+}
+
+.active-menu-mobile{
+    opacity: 1;
+    pointer-events: all;
+    display: flex;
+}
+
+.nav-mobile{
+    
+    display: none;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 8px 16px;
+    @include responsive(s){
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.nav-list-mobile{
+    position: relative;
+    align-items: center;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    
+}
+
+.navlink-mobile{
+    display: inline-block;
+    @include typeface-1 (h3, desktop);
+    color: $emphasis-normal;
+    padding: 16px 24px;
+    position: relative;
+    text-decoration: none;
+    
+    max-width: 100%;
+
+    &::after{
+        content: '';
+        position: absolute;
+        top: 90%;
+        left: 0px;
+
+        width: 0%;
+        height: 2px;
+        transition: 1s ease;
+
+        background: $gd-future;
+    }
+
+    &:hover {
+        &::after{
+            width: 100%;
+        }
+    }
+}
+
+// Menu Hamburguer
+.bxl{
+    width: 36px;
+    height: 36px;
+
+    position: relative;
+    cursor: pointer;
+    z-index: 800;
+    transition: .8s ease;
+
+    &::after{
+        content: '';
+        position: absolute;
+        top: 40%;
+        left: 17%;
+
+        width: 70%;
+        height: 2px;
+        transition: .5s ease;
+
+        background-color: $emphasis-ligth;
+    }
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: 64%;
+        left: 17%;
+
+        width: 70%;
+        height: 2px;
+        transition: .5s ease;
+
+        background-color: $emphasis-ligth;
+    }
+}
+
+.active-bx{
+    width: 36px;
+    height: 36px;
+
+    position: relative;
+    cursor: pointer;
+    z-index: 800;
+    transition: .7s ease;
+
+
+    &::after{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 17%;
+
+        transform: rotate(-135deg);
+
+        width: 70%;
+        height: 2px;
+
+        background-color: $emphasis-ligth;
+    }
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 17%;
+
+        transform: rotate(-45deg);
+
+        width: 70%;
+        height: 2px;
+
+        background-color: $emphasis-ligth;
+    }
+
+}

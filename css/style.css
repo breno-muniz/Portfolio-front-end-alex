@@ -145,6 +145,20 @@ h4 {
     font-family: "Rubik", sans-serif;
     font-size: 16px;
     line-height: 130%;
+    font-size: 10px;
+    line-height: 140%;
+  }
+}
+
+h5 {
+  color: #E6F1FF;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 130%;
+}
+@media screen and (max-width: 960px) {
+  h5 {
+    font-family: "Rubik", sans-serif;
   }
 }
 
@@ -503,4 +517,190 @@ body {
   height: 100vh;
   position: relative;
   scroll-behavior: smooth;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 72px;
+  z-index: 999999;
+  box-shadow: none;
+  background-color: #06121F;
+}
+
+.nav-desktop {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-height: 100%;
+  margin: 0 auto;
+  padding: 8px 16px;
+}
+@media screen and (max-width: 960px) {
+  .nav-desktop {
+    display: none;
+  }
+}
+
+.itens-nav {
+  display: flex;
+  justify-content: space-around;
+  gap: 8px;
+}
+@media screen and (max-width: 960px) {
+  .itens-nav {
+    display: none;
+  }
+}
+
+.navlink-desktop {
+  transition: 0.5s ease;
+  position: relative;
+  text-decoration: none;
+  justify-content: center;
+}
+.navlink-desktop :hover {
+  transition: 0.8s ease;
+  color: #A0FFE6;
+}
+.navlink-desktop::after {
+  content: "";
+  position: absolute;
+  top: 90%;
+  width: 0%;
+  height: 2px;
+  transition: 1s ease;
+  background: linear-gradient(45deg, #0A192F, #64FFDA, #E6F1FF);
+}
+.navlink-desktop:hover::after {
+  width: 100%;
+}
+@media screen and (max-width: 960px) {
+  .navlink-desktop {
+    display: none;
+  }
+}
+
+.menu-mobile {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, #0A192F, #1E1E1E);
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate3d(0, -100px, 0);
+}
+
+.active-menu-mobile {
+  opacity: 1;
+  pointer-events: all;
+  display: flex;
+}
+
+.nav-mobile {
+  display: none;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 8px 16px;
+}
+@media screen and (max-width: 960px) {
+  .nav-mobile {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.nav-list-mobile {
+  position: relative;
+  align-items: center;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.navlink-mobile {
+  display: inline-block;
+  font-family: "Rubik", sans-serif;
+  font-size: 32px;
+  line-height: 120%;
+  color: #E6F1FF;
+  padding: 16px 24px;
+  position: relative;
+  text-decoration: none;
+  max-width: 100%;
+}
+.navlink-mobile::after {
+  content: "";
+  position: absolute;
+  top: 90%;
+  left: 0px;
+  width: 0%;
+  height: 2px;
+  transition: 1s ease;
+  background: linear-gradient(45deg, #0A192F, #64FFDA, #E6F1FF);
+}
+.navlink-mobile:hover::after {
+  width: 100%;
+}
+
+.bxl {
+  width: 36px;
+  height: 36px;
+  position: relative;
+  cursor: pointer;
+  z-index: 800;
+  transition: 0.8s ease;
+}
+.bxl::after {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 17%;
+  width: 70%;
+  height: 2px;
+  transition: 0.5s ease;
+  background-color: #F0F9FF;
+}
+.bxl::before {
+  content: "";
+  position: absolute;
+  top: 64%;
+  left: 17%;
+  width: 70%;
+  height: 2px;
+  transition: 0.5s ease;
+  background-color: #F0F9FF;
+}
+
+.active-bx {
+  width: 36px;
+  height: 36px;
+  position: relative;
+  cursor: pointer;
+  z-index: 800;
+  transition: 0.7s ease;
+}
+.active-bx::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 17%;
+  transform: rotate(-135deg);
+  width: 70%;
+  height: 2px;
+  background-color: #F0F9FF;
+}
+.active-bx::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 17%;
+  transform: rotate(-45deg);
+  width: 70%;
+  height: 2px;
+  background-color: #F0F9FF;
 }/*# sourceMappingURL=style.css.map */

@@ -4,9 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header id="header">
+        <nav id="nav-mobile" class="nav-mobile">
+            <div class="bxl" id="bx"></div>
+            <div class="logo">
+                <img src="Imagens/svgs/Logo.svg" alt="" onload="SVGInject(this)">
+            </div>
+        </nav>
+
+        <nav id="nav-desktop" class="nav-desktop">
+            <div class="logo">
+                <img src="Imagens/svgs/Logo.svg" alt="" onload="SVGInject(this)">
+            </div>
+
+            <div class="itens-nav">
+                <a href="#Home" class="navlink-desktop"><h5>Home</h5></a>
+                <a href="#Projetos" class="navlink-desktop"><h5>Projetos</h5></a>
+                <a href="#Tecnologias" class="navlink-desktop"><h5>Tecnologias</h5></a>
+                <a href="#Sobre" class="navlink-desktop"><h5>Sobre</h5></a>
+            </div>
+        </nav>
+
+        <nav class="menu-mobile" id="menu-mobile">
+            <ul class="nav-list-mobile">
+                <li><a href="#Home" class="navlink-mobile"><h2>Home</h2></a></li>
+                <li><a href="#Projetos" class="navlink-mobile"><h2>Projetos</h2></a></li>
+                <li><a href="#Tecnologias" class="navlink-mobile"><h2>Tecnologias</h2></a></li>
+                <li><a href="#Sobre" class="navlink-mobile"><h2>Sobre</h2></a></li>
+            </ul>
+        </nav>
+    </header>
 </body>
+<script src="Javascript/svg-inject.min.js"></script>
+<script src="Javascript/script.js"></script>
 </html>
