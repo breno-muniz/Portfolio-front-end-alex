@@ -1,0 +1,17 @@
+// Animation para os buttons
+.icons-home a img {
+    transition: transform 0.3s ease, filter 0s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+    
+}
+
+.Git:hover {
+    filter: invert(46%) sepia(42%) saturate(5540%) hue-rotate(344deg) brightness(96%) contrast(98%);
+}
+
+.linkedin:hover{
+    filter: brightness(0) saturate(100%) invert(30%) sepia(70%) saturate(2000%) hue-rotate(200deg) brightness(90%) contrast(90%);
+}

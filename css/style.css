@@ -92,6 +92,43 @@
   border: 1px solid red;
 }
 
+.container-home {
+  max-width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212;
+  flex-direction: row;
+  overflow: hidden;
+  position: relative;
+}
+@media screen and (max-width: 960px) {
+  .container-home {
+    flex-direction: column;
+  }
+}
+
+.home {
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+  padding: 32px 64px;
+}
+
+.text-home {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 16px;
+}
+
+.image-home {
+  display: flex;
+  justify-content: center;
+}
+
 h1 {
   color: #E6F1FF;
   font-family: "Rubik", sans-serif;
@@ -201,6 +238,29 @@ strong {
 
 .weight-ligth {
   font-weight: 300;
+}
+
+.button-home {
+  display: flex;
+  text-decoration: none;
+  padding: 2px 2px;
+  width: 164px;
+  height: 62px;
+  background-color: #3BCCA8;
+  stroke: #64FFDA;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+  box-shadow: 0px 4px 4px 0px rgba(59, 204, 168, 0.25), 0px 4px 8px 0px rgb(59, 204, 168);
+}
+.button-home:hover {
+  transform: scale(1.1);
+  background-color: #64FFDA;
+  box-shadow: 0px 4px 8px 0px rgb(59, 204, 168);
+}
+.button-home:hoverh4 {
+  color: #CBD7E3;
 }
 
 .s-0 {
@@ -703,4 +763,19 @@ header {
   width: 70%;
   height: 2px;
   background-color: #F0F9FF;
+}
+
+.icons-home a img {
+  transition: transform 0.3s ease, filter 0s ease;
+}
+.icons-home a img:hover {
+  transform: scale(1.1);
+}
+
+.Git:hover {
+  filter: invert(46%) sepia(42%) saturate(5540%) hue-rotate(344deg) brightness(96%) contrast(98%);
+}
+
+.linkedin:hover {
+  filter: brightness(0) saturate(100%) invert(30%) sepia(70%) saturate(2000%) hue-rotate(200deg) brightness(90%) contrast(90%);
 }/*# sourceMappingURL=style.css.map */

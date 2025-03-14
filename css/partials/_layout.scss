@@ -126,3 +126,42 @@ $container-s: 540px;
     border: 1px solid red;
 }
 
+// Section Home
+
+.container-home{
+    max-width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $bg-color-dark;
+    flex-direction: row;
+    overflow: hidden;
+    position: relative;
+    @include responsive(s){
+        flex-direction: column;
+
+    }
+}
+
+.home{
+    display: grid;
+    grid-template-columns: 5fr 4fr;
+    padding: 32px 64px;
+}
+
+.text-home{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 16px;
+}
+
+.image-home{
+    display: flex;
+    justify-content: center;
+    
+}
+

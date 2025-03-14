@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="Javascript/svg-inject.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -39,24 +40,25 @@
         </nav>
     </header>
     <!--Section Home-->
-    <section class="container container-home">
+    <section class="container-home">
         <div class="home">
             <div class="text-home">
-                <div class="description-home">
+                <div class="description-home m-2">
                     <h2>Olá me chamo alex, desenvolvedor <span>front end</span> apaixonado por criar interfaces atrativas e responsivas</h2>
                 </div>
-                <div class="icons-home">
-                    <a href=""><img src="Imagens/Icones/Git.png" alt=""></a>
-                    <a href=""><img src="Imagens/Icones/Frame-6.png" alt=""></a>
+                <div class="icons-home m-2">
+                    <a href=""><img src="Imagens/Icones/Git.png" class="Git" alt=""></a>
+                    <a href=""><img src="Imagens/Icones/Frame-6.png" class="linkedin" alt=""></a>
+                </div>
+                <div class="">
+                    <a class="button-home mb-4" href=""><h4>Donwload Cv</h4></a>
                 </div>
             </div>
-            <div class="image-home">
-                <img src="Imagens/svgs/Computador 2.svg" alt="" onload="SVGInject(this)">
-                <img src="Imagens/svgs/Mouse.svg" alt="" onload="SVGInject(this)">
+            <div class="image-home m-1">
+                <img class="m-1" src="Imagens/svgs/Computador 2.svg" alt="" onload="SVGInject(this)">
             </div>
         </div>
     </section>
 </body>
-<script src="Javascript/svg-inject.min.js"></script>
 <script src="Javascript/script.js"></script>
 </html>
