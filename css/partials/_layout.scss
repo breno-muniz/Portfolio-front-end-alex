@@ -129,6 +129,7 @@ $container-s: 540px;
 // Section Home
 
 .container-home{
+    
     max-width: 100%;
     margin: 0 auto;
     height: 100vh;
@@ -149,6 +150,10 @@ $container-s: 540px;
     display: grid;
     grid-template-columns: 5fr 4fr;
     padding: 32px 64px;
+    @include responsive(s){
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .text-home{
@@ -158,6 +163,7 @@ $container-s: 540px;
     align-items: center;
     padding: 8px 16px;
 }
+
 
 .image-home{
     display: flex;

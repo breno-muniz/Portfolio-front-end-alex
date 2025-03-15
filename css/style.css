@@ -115,6 +115,12 @@
   grid-template-columns: 5fr 4fr;
   padding: 32px 64px;
 }
+@media screen and (max-width: 960px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .text-home {
   display: flex;
@@ -154,8 +160,6 @@ h2 {
     font-family: "Rubik", sans-serif;
     font-size: 32px;
     line-height: 120%;
-    font-size: 24px;
-    line-height: 120%;
   }
 }
 
@@ -168,6 +172,8 @@ h3 {
 @media screen and (max-width: 960px) {
   h3 {
     font-family: "Rubik", sans-serif;
+    font-size: 24px;
+    line-height: 120%;
   }
 }
 
@@ -182,8 +188,6 @@ h4 {
     font-family: "Rubik", sans-serif;
     font-size: 16px;
     line-height: 130%;
-    font-size: 10px;
-    line-height: 140%;
   }
 }
 
@@ -196,6 +200,8 @@ h5 {
 @media screen and (max-width: 960px) {
   h5 {
     font-family: "Rubik", sans-serif;
+    font-size: 10px;
+    line-height: 140%;
   }
 }
 
@@ -256,7 +262,7 @@ strong {
 }
 .button-home:hover {
   transform: scale(1.1);
-  background-color: #64FFDA;
+  background: radial-gradient(circle, #64FFDA, #0A192F);
   box-shadow: 0px 4px 8px 0px rgb(59, 204, 168);
 }
 .button-home:hoverh4 {
@@ -770,10 +776,6 @@ header {
 }
 .icons-home a img:hover {
   transform: scale(1.1);
-}
-
-.Git:hover {
-  filter: invert(46%) sepia(42%) saturate(5540%) hue-rotate(344deg) brightness(96%) contrast(98%);
 }
 
 .linkedin:hover {
