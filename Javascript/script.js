@@ -26,3 +26,6 @@ const showMenu = (toggleId, navId) => {
 }
 
 showMenu('bx', 'menu-mobile');
+
+
+// MODAL
