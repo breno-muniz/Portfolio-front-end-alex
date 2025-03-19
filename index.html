@@ -48,7 +48,7 @@
                 </div>
                 <div class="icons-home m-2">
                     <a href=""><img src="Imagens/Icones/gihub.png" class="github" alt=""></a>
-                    <a href=""><img src="Imagens/Icones/Frame-6.png" class="linkedin" alt=""></a>
+                    <a href=""><img src="Imagens/Icones/linkedin.png" class="linkedin" alt=""></a>
                 </div>
                 <div class="">
                     <a class="button-home mb-4" href=""><h4>Donwload Cv</h4></a>
@@ -68,7 +68,7 @@
             <img src="Imagens/svgs/lines-projetos.svg" alt="" onload="SVGInject(this)">
         </div>
         <div class="projetos m-5">
-            <div class="cards-projects">
+            <div class="cards-projects button-modal">
                 <img src="Imagens/projetos/U.bank.png" alt="">
                 <div class="overlay">
                     <h3>U.bank</h3>
@@ -81,7 +81,28 @@
         </div>
 
         <!-- Modal -->
-          
+          <div class="modal" id="mymodal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="img-modal">
+                    <img id="img-modal" src="" alt="">
+                </div>
+                <div class="modal-title" >
+                    <h2 id="modal-title"></h2>
+                </div>
+                <div class="modal-descripition">
+                    <div class="descripition-project">
+                        <p class="descripition-p"></p>
+                        <button id="github-button"></button>
+                        <a id="button-projeto"></a>
+                    </div>
+                    <div class="tecnologias-modal" id="tecnologias-modal">
+                        <h4 id="tenclogias-title-modal"></h4>
+                        
+                    </div>
+                </div>
+            </div>
+          </div>
     </section>
 
 </body>
