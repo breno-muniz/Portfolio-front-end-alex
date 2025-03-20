@@ -236,3 +236,67 @@ $container-s: 540px;
        height: 157px;
     }
 }
+
+
+// Sessão tecnologias
+.container-tecnologia{
+    max-width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $bg-color-ligth;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+.title-tecnologias{
+    position: absolute;
+    top: 0;
+    padding: 16px;
+    z-index: 5825;
+}
+
+.content-tecnologia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    border: 1px solid red;
+    gap: 64px;
+}
+
+
+.content-softSkil{
+    width: 612px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 32px;
+    border: 1px solid;
+    
+    border-image: $gd-neon-tech 1;
+}
+
+.descripition-sofSkil{
+    width: 612px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+.content-hardskil{
+    width: 612px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    border: 1px solid;
+    border-image: $gd-future 1;
+}
