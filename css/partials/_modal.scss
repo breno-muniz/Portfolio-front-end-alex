@@ -30,11 +30,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  
   opacity: 0;
   pointer-events: none;
 
-  transition: 1s ease;
+  transition: opacity 1s ease;
 }
 .hidden {
   display: none;
@@ -42,43 +42,192 @@
 .modal-active{
   opacity: 1;
   pointer-events: all;
+  z-index: 999999;
+  visibility: visible; /* Garantir que a visibilidade esteja ativada */
 }
 
 .modal-content{
-  max-width: 1044px;
+  width: 1044px;
+  max-width: 100%;
   background: $gd-clean-layout;
   padding: 32px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  overflow-y: auto;
+  @include responsive (s){
+    min-height: 100vh;
+  };
+
+
+}
+
+.modal-descripition{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid $primary-normal;
+  width: 100%;
+  min-height: auto;
+  gap: 16px;
+
+  @include responsive (s){
+    flex-direction: column;
+  }
+}
+
+.descripition-project{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 612px;
+  
+  gap: 16px;
+  padding: 8px;
+
+  @include responsive (s){
+    max-width: 100%;
+  }
+}
+
+.tecnologias-modal{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding: 16px;
+  flex-direction: column;
+  img{
+    width: 64px;
+    height: 64px;
+    
+  }
+  @include responsive (s){
+    max-width: 100%;
+  }
+}
+
+.tecnologias-img{
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 32px;
+  
+  padding: 16px;
+  img{
+    width: 64px;
+    height: 64px;
+    
+  }
+  @include responsive (s){
+    max-width: 100%;
+  }
+}
+
+.button-modal-descripition{
+  gap: 16px;
+  display: flex;
+  padding: 16px;
+
+  @include responsive (s){
+    flex-direction: column;
+  }
 }
 
 .close{
   color: $emphasis-normal;
   position: absolute;
 
-  top: 0;
-  right: 24px;
+  top: -8px;
+  right: 12px;
   cursor: pointer;
-  font-size: 40px;
+  font-size: 48px;
 
   &:hover{
-    color: $secondary-ligth;
+    color: $secondary-dark;
+    transition: 1s ease;
   }
 }
 
 .img-modal{
-  width: 540px;
+  width: 90%;
   height: auto;
-  border: 1px solid red;
   margin: 0 auto;
+  
   img{
     max-width: 100%;
+    background-size: cover;
   }
 }
 
 .button-projeto{
   display: flex;
-  font-size: 32px;
-  color: aqua;
-  width: 125px;
-  height: 32px;
+  font-size: 24px;
+  border: 1px solid $secondary-normal;
+  color: $emphasis-normal;
+  width: 148px;
+  height: 58px;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px ;
+  transition: transform 1s ease;
+
+  box-shadow: 
+    0px 4px 4px 0px rgba(59, 204, 168, 0.25), 
+    0px 4px 8px 0px rgba(59, 204, 168, 1);
+
+  &:hover{
+      transform: scale(1.1);
+      border: 1px solid $secondary-ligth;
+      color: $emphasis-ligth;
+      box-shadow: 0px 4px 8px 0px rgba(59, 204, 168, 1);
+    };
+
+    @include responsive (s){
+      width: 128px;
+      height: 42px;
+      font-size: 18px;
+    }
 }
+
+.github-button{
+  display: flex;
+  font-size: 24px;
+  border: 1px solid $secondary-normal;
+  background-color: $secondary-dark;
+  color: $emphasis-normal;
+  width: 148px;
+  height: 58px;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  transition: transform 1s ease;
+  border-radius: 5px ;
+
+
+  box-shadow: 
+    0px 4px 4px 0px rgba(59, 204, 168, 0.25), 
+    0px 4px 8px 0px rgba(59, 204, 168, 1);
+
+  &:hover{
+    transform: scale(1.1);
+    background-color: $secondary-normal;
+    color: $emphasis-ligth;
+    border: 1px solid $secondary-ligth;
+    box-shadow: 0px 4px 8px 0px rgba(59, 204, 168, 1);
+  };
+
+  @include responsive (s){
+    width: 128px;
+    height: 42px;
+    font-size: 18px;
+  }
+}
+

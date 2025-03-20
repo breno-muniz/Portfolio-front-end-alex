@@ -29,57 +29,95 @@ showMenu('bx', 'menu-mobile');
 
 
 // MODAL
-const button = document.querySelector('.button-modal');
+const buttons = document.querySelectorAll('.button-modal');
 const modal = document.getElementById('mymodal');
 const close = document.querySelector('.close');
-
-button.addEventListener('click', () => {
-    modal.classList.add('modal-active');
-});
-
-close.addEventListener('click', () => {
-    modal.classList.remove('modal-active');
-});
-
-const projetos = [{
-    titulo: 'U.bank',
-    descricao: 'Aplicativo de banco digital',
-    img: 'Imagens/projetos/U.bank.png',
-    tituloTecnologias: 'Tecnologias utilizadas:',
-    tituloButtonGithub:"Ver no Github",
-    tituloButtonProjeto:"Ver Projeto",
-    github:"",
-    linkProjeto:"https://breno-muniz.github.io/Projeto-U.bank/",
-    tecnologies: ['Imagens/Icones/Figma.png', 'Imagens/Icones/Html.png', 'Imagens/Icones/Js.png', 'Imagens/Icones/sass.png', 'Imagens/Icones/css.png']
-}]
-
 const modalTitle = document.getElementById('modal-title');
 const imgModal = document.getElementById('img-modal');
 const modalDesc = document.querySelector('.descripition-p');
 const modalTecnologies = document.getElementById('tecnologias-modal');
-const modalTitleTecnologias = document.getElementById('tenclogias-title-modal');
-const buttonGitguhb= document.getElementById('github-button');
-const buttonProjeto= document.getElementById('button-projeto');
+const modalTitleTecnologias = document.getElementById('tecnologias-title-modal');
+const buttonGithub = document.getElementById('github-button');
+const buttonProjeto = document.getElementById('button-projeto');
+
+const projetos = [
+    {
+        titulo: 'U.bank',
+        descricao: 'U.bank foi desenvolvido com HTML, CSS, JavaScript e estilizado utilizando Sass. O projeto proporciona uma interface que seja capaz de captar um possível cliente ou investidor para criar sua conta no banco. O projeto foi criado com foco em UX e UI, utilizando o Figma para prototipagem.',
+        img: 'Imagens/projetos/U.bank.png',
+        tituloButtonGithub: "Ver no Github",
+        tituloButtonProjeto: "Ver Projeto",
+        tituloModalTec: "Tecnologias ultilizadas",
+        github: "https://github.com/seu-repositorio",
+        linkProjeto: "https://breno-muniz.github.io/Projeto-U.bank/",
+        tecnologies: [
+            'Imagens/Icones/Figma.png',
+            'Imagens/Icones/Html.png',
+            'Imagens/Icones/Js.png',
+            'Imagens/Icones/sass.png',
+            'Imagens/Icones/css.png'
+        ]
+    },
+    {
+        titulo: 'Teste Projeto',
+        tituloModalTec: "Tecnologias ultilizadas",
+        descricao: 'testestesttestsetseestestest',
+        img: 'Imagens/projetos/U.bank.png',
+        tituloButtonGithub: "Ver no Github",
+        tituloButtonProjeto: "Ver Projeto",
+        github: "",
+        linkProjeto: "https://breno-muniz.github.io/Projeto-U.bank/",
+        tecnologies: [
+            'Imagens/Icones/sass.png',
+            'Imagens/Icones/css.png'
+        ]
+    }
+];
+
+buttons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+        const projeto = projetos[index];
+
+        modalTitleTecnologias.textContent = projeto.tituloModalTec;
+        modalTitle.textContent = projeto.titulo;
+        imgModal.src = projeto.img;
+        modalDesc.textContent = projeto.descricao;
+        buttonProjeto.textContent = projeto.tituloButtonProjeto;
+        buttonGithub.textContent = projeto.tituloButtonGithub;
+        buttonGithub.href = projeto.github;
+        buttonProjeto.href = projeto.linkProjeto;
 
 
+        modalTecnologies.querySelectorAll('img').forEach(img => img.remove());
 
-buttonGitguhb.classList.add('github-button');
-buttonProjeto.classList.add('button-projeto');
-modalTitleTecnologias.textContent = projetos[0].tituloTecnologias;
-modalTitle.textContent = projetos[0].titulo;
-imgModal.src = projetos[0].img;
-modalDesc.textContent = projetos[0].descricao;
-buttonProjeto.textContent=projetos[0].tituloButtonProjeto;
-buttonGitguhb.href=projetos[0].github;
-buttonProjeto.href=projetos[0].linkProjeto;
-buttonProjeto.target="_blank";
+        
+        projeto.tecnologies.forEach((tech) => {
+            const img = document.createElement('img');
+            img.src = tech;
+            modalTecnologies.appendChild(img);
+        });
 
+        
+        modal.classList.add('modal-active');
 
-const tecnologies = projetos[0].tecnologies;
-
-tecnologies.forEach((tecnologies) => {
-    const img = document.createElement('img');
-    img.src = tecnologies;
-    modalTecnologies.appendChild(img);
+        document.body.style.overflow = "hidden";
+    });
 });
+
+close.addEventListener('click', () => {
+    modal.classList.remove('modal-active');
+
+    document.body.style.overflow = "auto";
+});
+
+modal.addEventListener('click', (event) => {
+    if (event.target === modal) {
+        modal.classList.remove('modal-active');
+
+        
+        document.body.style.overflow = "auto";
+    }
+});
+
+
 
