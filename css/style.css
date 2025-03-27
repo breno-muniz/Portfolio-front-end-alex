@@ -222,44 +222,84 @@
 
 .content-tecnologia {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  flex-wrap: wrap;
-  max-width: 100%;
-  border: 1px solid red;
-  gap: 64px;
+  width: 80%;
+  /*border: 1px solid red;*/
+  gap: 16px;
+}
+@media screen and (max-width: 960px) {
+  .content-tecnologia {
+    width: 100%;
+    max-width: 100%;
+    flex-direction: column;
+  }
 }
 
 .content-softSkil {
-  width: 612px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-  gap: 32px;
-  border: 1px solid;
-  -o-border-image: linear-gradient(90deg, #64FFDA, #0A192F) 1;
-     border-image: linear-gradient(90deg, #64FFDA, #0A192F) 1;
-}
-
-.descripition-sofSkil {
-  width: 612px;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.content-hardskil {
-  width: 612px;
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100%;
-  border: 1px solid;
-  -o-border-image: linear-gradient(45deg, #0A192F, #64FFDA, #E6F1FF) 1;
-     border-image: linear-gradient(45deg, #0A192F, #64FFDA, #E6F1FF) 1;
+  gap: 32px;
+  /*border: 1px solid rebeccapurple;*/
+}
+@media screen and (max-width: 960px) {
+  .content-softSkil {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.descripition-sofSkil {
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /*border: 1px solid green;*/
+}
+.descripition-sofSkil ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 16px;
+}
+
+.content-hardskil {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (max-width: 960px) {
+  .content-hardskil {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.descripition-hardskil {
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /*border: 1px solid green;*/
+}
+.descripition-hardskil ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 16px;
+}
+
+@media screen and (max-width: 540px) {
+  .svg-softskil {
+    display: none;
+  }
 }
 
 h1 {
@@ -1134,5 +1174,19 @@ header {
   transition: transform 0.3s ease, filter 0s ease;
 }
 .tecnologias-img img:hover {
+  transform: scale(1.1);
+}
+
+.icons-hardskil {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+.icons-hardskil img {
+  transition: transform 0.8s ease;
+}
+.icons-hardskil img:hover {
   transform: scale(1.1);
 }/*# sourceMappingURL=style.css.map */

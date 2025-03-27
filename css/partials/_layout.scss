@@ -260,43 +260,81 @@ $container-s: 540px;
 
 .content-tecnologia{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    flex-wrap: wrap;
-    max-width: 100%;
-    border: 1px solid red;
-    gap: 64px;
+    width: 80%;
+    /*border: 1px solid red;*/
+    gap: 16px;
+    @include responsive(s){
+        width: 100%;
+        max-width: 100%;
+        flex-direction: column;
+    }
 }
 
 
 .content-softSkil{
-    width: 612px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 32px;
-    border: 1px solid;
-    
-    border-image: $gd-neon-tech 1;
-}
-
-.descripition-sofSkil{
-    width: 612px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    
-}
-
-.content-hardskil{
-    width: 612px;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100%;
-    border: 1px solid;
-    border-image: $gd-future 1;
+    gap: 32px;
+    /*border: 1px solid rebeccapurple;*/
+    @include responsive(s){
+        width: 100%;
+        max-width: 100%;
+    }
+    
+}
+
+.descripition-sofSkil{
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /*border: 1px solid green;*/
+    ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        gap: 16px;        
+    }
+    
+    
+}
+
+.content-hardskil{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @include responsive(s){
+        width: 100%;
+        max-width: 100%;
+    }
+
+}
+
+.descripition-hardskil{
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /*border: 1px solid green;*/
+    ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        gap: 16px;        
+    }
+}
+
+.svg-softskil{
+    @include responsive(xs){
+        display: none;
+    }
 }
