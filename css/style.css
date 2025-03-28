@@ -207,7 +207,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #282C34;
+  background: linear-gradient(180deg, #0A192F, #121212);
   flex-direction: column;
   overflow: hidden;
   position: relative;
@@ -274,7 +274,7 @@
   align-items: center;
   flex-direction: column;
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 540px) {
   .content-hardskil {
     width: 100%;
     max-width: 100%;
