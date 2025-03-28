@@ -338,3 +338,118 @@ $container-s: 540px;
         display: none;
     }
 }
+
+// Sessão sobre
+.container-sobre{
+    max-width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $bg-color-dark;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+.title-sobre{
+    position: absolute;
+    top: 0;
+    padding: 16px;
+    z-index: 5825;
+}
+
+.content-sobre{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    /*border: 1px solid red;*/
+    gap: 16px;
+    @include responsive(s){
+        width: 100%;
+        max-width: 100%;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+}
+
+.content-img-sobre{
+    /*border: 1px solid green;*/
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.img-sobre{
+    position: relative;
+    z-index: 2;
+}
+
+.icones-sobre{
+    position: absolute;
+    top: 0;
+}
+
+.sass{
+    position: absolute;
+    top: 126px;
+    right: -464px;
+}
+
+.git{
+    position: absolute;
+    top: 354px;
+    right: -261px;
+}
+
+.react{
+    position: absolute;
+    top: 126px;
+    right: -64px;
+}
+
+.figma{
+    position: absolute;
+    top: -61px;
+    right: -262px;
+}
+
+
+.circles-sobre{
+    position: absolute;
+    z-index: 1;
+    
+    @include responsive(xs){
+        display: none;
+    }
+}
+
+.description-sobre{
+    /*border: 1px solid yellow;*/
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icones-description-home{
+    display: flex;
+    align-items: center;
+    img{
+        width: 64px;
+        height: 64px;
+        transition: transform 0.8s ease;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    
+    
+}
