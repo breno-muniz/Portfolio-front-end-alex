@@ -1532,7 +1532,7 @@ header {
   transform-origin: center center;
   transform-box: fill-box;
   opacity: 1;
-  animation: bloco-e 8s ease alternate infinite;
+  animation: bloco-e 15s ease alternate infinite;
 }
 
 @keyframes bloco-e {
@@ -1540,7 +1540,7 @@ header {
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }
-  50% {
+  40% {
     opacity: 1;
     transform: translate3d(-12px, -30px, 0);
   }
@@ -1585,5 +1585,80 @@ header {
   100% {
     opacity: 1;
     transform: translate(-100%, 0%);
+  }
+}
+.lines-1 {
+  animation: lines-projeto 2.8s ease infinite forwards;
+  /*transform: translate(15%, 20%);*/
+}
+
+@keyframes lines-projeto {
+  0% {
+    opacity: 0;
+    transform: translate(100%, 0%);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(0%, 0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-100%, 0%);
+  }
+}
+.lines-2 {
+  animation: lines-projeto-2 2.8s ease 2s infinite forwards;
+  /*transform: translate(15%, 20%);*/
+}
+
+@keyframes lines-projeto-2 {
+  0% {
+    opacity: 0;
+    transform: translate(-100%, 0%);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(0%, 0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(100%, 0%);
+  }
+}
+.lines-center {
+  animation: lines-projeto 8s ease-in 3s infinite forwards;
+  /*transform: translate(15%, 20%);*/
+}
+
+@keyframes lines-projeto {
+  0% {
+    opacity: 0;
+    transform: translate(-100%, 0%);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(0%, 0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(100%, 0%);
+  }
+}
+.lines-6 {
+  animation: lines-projeto-6 8s ease-in 6s infinite forwards;
+}
+
+@keyframes lines-projeto-6 {
+  0% {
+    opacity: 0;
+    transform: translate(-100%, 0%);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(0%, 0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(100%, 0%);
   }
 }/*# sourceMappingURL=style.css.map */
