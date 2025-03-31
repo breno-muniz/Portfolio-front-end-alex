@@ -24,4 +24,9 @@
             color: $emphasis-dark;
         }   
     }
+
+    @include responsive (xs){
+        width: 128px;
+        height: 42px;
+    }
 }

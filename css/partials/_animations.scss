@@ -1,6 +1,5 @@
 // Animation Home
 .mouse-home{
-    opacity: 1;
     transform-origin: center center;
     transform-box: fill-box;
     animation: cursor 5s ease infinite alternate;
@@ -34,7 +33,7 @@
     }
 }
 .retangulo-home{
-    opacity: 0;
+    
     animation: retangulo-home 5s ease infinite alternate;
 }
 
@@ -48,6 +47,212 @@
     }
 }
 
-.text-home-1{
+
+//Animation computador home
+
+.caneca{
+    transform-origin: center center;
+    transform-box: fill-box;
+    opacity: 1;
+    animation: caneca 6s ease 2s infinite alternate;
+}
+
+@keyframes caneca {
+    0%{
+        transform: translate3d(0,0,0);
+    }
+    100%{
+        transform: translate3d(0,-10px,0);
+    }
+}
+
+.Mouse{
+    transform-origin: center center;
+    transform-box: fill-box;
+    animation: mouse 8s ease infinite alternate;
+}
+
+@keyframes mouse{
+    0%{
+        transform: translate3d(0,0,0);
+    }
+    30%{
+        transform: translate3d(0,08px,0);
+    }
+    60%{
+        transform: translate3d(0,-10px,0);
+    }
+    70%{
+        transform: translate3d(10px,0,0);
+    }
+    100%{
+        transform: translate3d(-10px,0,0);
+    }
+}
+
+.smoke{
+    animation: smoke 6s ease infinite alternate;
+}
+@keyframes smoke {
+    0%{
+        transform: translate3d(0,0,0);
+    }
+    100%{
+        transform: translate3d(0,-10px,0);
+    }
+}
+
+// buttons tela computador
+.button-p{
     cursor: pointer;
+    opacity: 1;
+    :hover{
+        fill: $secondary-normal;
+    }
+}
+
+.circle{
+    
+    :hover{
+        fill: $emphasis-ligth;
+    }
+
+}
+
+.circle-back{
+    :hover{
+        fill: $emphasis-dark;
+    }
+}
+
+.inter-d{
+    :hover{
+        fill: $primary-ligth;
+    }
+}
+
+.lower-d{
+    :hover{
+        fill: $secondary-dark;
+    }
+}
+
+.top-d{
+    :hover{
+        fill: $bg-color-ligth;
+    }
+}
+
+.front-d{
+    :hover{
+        fill: $secondary-ligth;
+    }
+}
+
+
+.rigth-bar{
+    :hover{
+        fill: blue;
+    }
+}
+
+.top-bar{
+    :hover{
+        fill: yellow;
+    }
+}
+
+
+.front-bar{
+    :hover{
+        fill: $secondary-dark;
+    }
+}
+
+.top-e{
+    :hover{
+        fill: $secondary-dark;
+    }
+}
+
+.rigth-e{
+    :hover{
+        fill: blue;
+    }
+}
+
+.inter-e{
+    :hover{
+        fill: yellow;
+    }
+}
+
+.front-e{
+    :hover{
+        fill: $primary-ligth;
+    }
+}
+
+// blocos computador
+.bloco-e{
+    transform-origin: center center;
+    transform-box: fill-box;
+    opacity: 1;
+    animation: bloco-e 8s ease alternate infinite;
+}
+
+@keyframes bloco-e{
+    0%{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+    50%{
+        opacity: 1;
+        transform: translate3d(-12px,-30px,0);
+    }
+    100%{
+        opacity: 1;
+        transform: translate3d(0,50px,0);
+    }
+}
+
+// Animation lines home
+.line-1-home{
+    z-index: 5825;
+    animation: lines-1 10s ease 1s infinite forwards;
+}
+
+@keyframes lines-1{
+    0%{
+        opacity: 0;
+        transform: translate(-100%, 0%);
+    }
+    50%{
+        opacity: 1;
+        transform: translate(0%, 0%);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(100%, 0%);
+    }
+}
+
+.line-2-home{
+    z-index: 5825;
+    animation: lines-2 10s ease infinite forwards;
+}
+
+@keyframes lines-2{
+    0%{
+        opacity: 0;
+        transform: translate(100%, 0%);
+    }
+    50%{
+        opacity: 1;
+        transform: translate(0%, 0%);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(-100%, 0%);
+    }
 }
