@@ -1366,7 +1366,6 @@ header {
   align-items: center;
   flex-wrap: wrap;
   cursor: pointer;
-  border: 1px solid red;
 }
 .icons-hardskil img {
   transition: transform 0.8s ease;
