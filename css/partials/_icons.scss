@@ -32,11 +32,20 @@
     align-items: center;
     flex-wrap: wrap;
     cursor: pointer;
+    border: 1px solid red;
     img{
         transition: transform 0.8s ease;
         
         &:hover{
             transform: scale(1.1);
+        }
+        @include responsive (xs){
+            width: 64px;
+            height: 64px;
+        }
+        @include responsive (s){
+            width: 86px;
+            height: 86px;
         }
     }
     

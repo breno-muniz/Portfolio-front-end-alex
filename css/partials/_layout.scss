@@ -139,10 +139,7 @@ $container-s: 540px;
     flex-direction: row;
     overflow: hidden;
     position: relative;
-    @include responsive(s){
-        flex-direction: column;
 
-    }
 }
 
 .home{
@@ -152,6 +149,7 @@ $container-s: 540px;
     padding: 32px 64px;
     width: 80%;
     gap: 16px;
+    
     position: relative;
     @include responsive(m){
         flex-direction: column;
@@ -171,6 +169,10 @@ $container-s: 540px;
     padding: 16px;
     z-index: 5825;
     @include responsive(s){
+        margin-top: 64px;
+    }
+
+    @include responsive(xs){
         display: none;
     }
 }
