@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Imagens/svgs/Logo.svg" type="image/x-icon">
     <title>Meu Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="Javascript/svg-inject.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
@@ -25,7 +27,7 @@
             <div class="itens-nav">
                 <a href="#Home" class="navlink-desktop"><h5>Home</h5></a>
                 <a href="#Projetos" class="navlink-desktop"><h5>Projetos</h5></a>
-                <a href="#Tecnologias" class="navlink-desktop"><h5>Tecnologias</h5></a>
+                <a href="#Tecnologias" class="navlink-desktop"><h5>Techs & Skills</h5></a>
                 <a href="#Sobre" class="navlink-desktop"><h5>Sobre</h5></a>
             </div>
         </nav>
@@ -34,50 +36,50 @@
             <ul class="nav-list-mobile">
                 <li><a href="#Home" class="navlink-mobile"><h2>Home</h2></a></li>
                 <li><a href="#Projetos" class="navlink-mobile"><h2>Projetos</h2></a></li>
-                <li><a href="#Tecnologias" class="navlink-mobile"><h2>Tecnologias</h2></a></li>
+                <li><a href="#Tecnologias" class="navlink-mobile"><h2>Techs & Skills</h2></a></li>
                 <li><a href="#Sobre" class="navlink-mobile"><h2>Sobre</h2></a></li>
             </ul>
         </nav>
     </header>
     <!--Section Home-->
-    <main class="container-home">
+    <main class="container-home Home">
         <div class="home mt-2">
             <div class="lines-home">
                 <img src="Imagens/svgs/lines-home.svg" alt="" onload="SVGInject(this)">
             </div>
-            <div class="text-home">
-                <div class="description-home">
+            <div class="text-home" data-aos="fade-up" data-aos-delay="200">
+                <div class="description-home" >
                     <img src="Imagens/svgs/text-home.svg" alt="" onload="SVGInject(this)">
                 </div>
                 <div class="icons-home m-2">
-                    <a href=""><img src="Imagens/Icones/gihub.png" class="github" alt=""></a>
-                    <a href=""><img src="Imagens/Icones/linkedin.png" class="linkedin" alt=""></a>
+                    <a href="https://github.com/breno-muniz" target="_blank"><img src="Imagens/Icones/gihub.png" class="github" alt=""></a>
+                    <a href="https://www.linkedin.com/in/alexmunizribeiro/" target="_blank"><img src="Imagens/Icones/linkedin.png" class="linkedin" alt=""></a>
                 </div>
                 <div class="">
                     <a class="button-home mb-4" href=""><h4>Donwload Cv</h4></a>
                 </div>
             </div>
-            <div class="image-home m-1">
+            <div class="image-home m-1" data-aos="fade-up" data-aos-delay="400">
                 <img class="m-1" src="Imagens/svgs/Computador 2.svg" alt="" onload="SVGInject(this)">
             </div>
         </div>
     </main>
     <!--Section Projetos-->
-    <section class="container-projetos">
+    <section class="container-projetos Projetos">
         <div class="title-projetos">
             <h1>Projetos</h1>
         </div>
         <div class="lines-projetos">
             <img src="Imagens/svgs/lines-projetos.svg" alt="" onload="SVGInject(this)">
         </div>
-        <div class="projetos m-5">
+        <div class="projetos m-5" data-aos="fade-up" data-aos-delay="200">
             <div class="cards-projects button-modal">
                 <img src="Imagens/projetos/U.bank.png" alt="">
                 <div class="overlay">
                     <h3>U.bank</h3>
                 </div>
             </div>
-            <div class="cards-projects button-modal"></div>
+            <!--<div class="cards-projects button-modal"></div>-->
         
         </div>
 
@@ -95,8 +97,8 @@
                     <div class="descripition-project">
                         <p class="descripition-p"></p>
                         <div class="button-modal-descripition">
-                            <a class="github-button" id="github-button"></a>
-                            <a class="button-projeto" id="button-projeto"></a>
+                            <a class="github-button" target="_blank" id="github-button"></a>
+                            <a class="button-projeto" target="_blank" id="button-projeto"></a>
                         </div>
                     </div>
                     <div class="tecnologias-modal" >
@@ -113,13 +115,13 @@
     </section>
 
     <!-- Sessão tecnologias e habilidades -->
-     <section class="container-tecnologia">
+     <section class="container-tecnologia Tecnologias">
         <div class="title-tecnologias">
             <h1>Skills & Techs</h1>
         </div>
         <div class="content-tecnologia mt-5 m-4">
             <div class="content-softSkil m-2">
-                <div class="descripition-sofSkil m-2">
+                <div class="descripition-sofSkil m-2" data-aos="fade-up">
                     <ul>
                         <li><h4>Proatividade</h4></li>
                         <li><h4>Adaptabilidade</h4></li>
@@ -129,7 +131,7 @@
                         <li><h4>Gestão de Tempo e Organização</h4></li>
                     </ul>
                 </div>
-                <div class="icons-hardskil m-2">
+                <div class="icons-hardskil m-2" data-aos="fade-up" data-aos-delay="400">
                     <img src="Imagens/Icones/Html.png" alt="">
                     <img src="Imagens/Icones/css.png" alt="">
                     <img src="Imagens/Icones/Js.png" alt="">
@@ -142,11 +144,11 @@
                 
             </div>
             <div class="content-hardskil m-1">
-                <div class="svg-softskil m-2">
+                <div class="svg-softskil m-2" data-aos="fade-up" data-aos-delay="400">
                     <img src="Imagens/svgs/chaves-tech.svg" alt="" onload="SVGInject(this)">
                 </div>
 
-                <div class="descripition-hardskil m-2">
+                <div class="descripition-hardskil m-2" data-aos="fade-up">
                     <ul>
                         <li><h4>Desenvolvedor Front-End</h4></li>
                         <li><h4>UI/UX Design e Prototipação</h4></li>
@@ -159,46 +161,51 @@
         </div>
      </section>
      <!-- Sessão Sobre -->
-    <section class="container-sobre">
+    <section class="container-sobre Sobre">
         <div class="title-sobre">
             <h1>Sobre</h1>
         </div>
-        <div class="content-sobre mt-5">
-            <div class="content-img-sobre m-1 p-3">
-                <div class="circles-sobre">
-                    <img src="Imagens/svgs/Circles.svg" alt="" onload="SVGInject(this)">
-                </div>
+        <div class="lines-sobre" >
+            <img src="Imagens/svgs/lines-home.svg" alt=""  onload="SVGInject(this)">
+        </div>
+        <div class="content-sobre">
+            <div class="content-img-sobre m-1 p-3" data-aos="fade-up" data-aos-delay="400">
                 <div class="img-sobre">
-                    <img src="Imagens/svgs/eu_sobre.png" alt="">
-                    <div class="icones-sobre">
-                        <div class="sass">
-                            <img src="Imagens/Icones/sass.png" alt="" class="sass-sobre">
-                        </div>
-                        <div class="git">
-                            <img src="Imagens/Icones/Git.png" alt="">
-                        </div>
-                        <div class="figma">
-                            <img src="Imagens/Icones/Figma.png" alt="">
-                        </div>
-                        <div class="react">
-                            <img src="Imagens/Icones/React Native.png" alt="">
-                        </div>
-                    </div>
+                    <img src="Imagens/svgs/img-sobre.svg" alt="" onload="SVGInject(this)">
                 </div>
             </div>
-            <div class="description-sobre m-1 p-2">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing 
-                    elit. Culpa, at blanditiis corrupti accusamus in, 
-                    quaerat itaque tempore quam ullam sequi, illum quas 
-                    voluptas molestiae quisquam eligendi nisi. Aut, 
-                    voluptate non!</p>
+            <div class="description-sobre m-1 p-2" data-aos="fade-up">
+                <p>Olá! Me chamo Alex Breno e sou um desenvolvedor Front-End apaixonado por criar interfaces modernas, responsivas e intuitivas. Desde cedo, sempre fui fascinado pelo mundo da tecnologia, explorando diversas áreas até encontrar minha verdadeira vocação no desenvolvimento web.</p>
+                    <br>
+                <p>Atualmente, estou aprofundando meus conhecimentos em HTML, CSS, SASS, JavaScript e ReactJS, além de utilizar Bootstrap para estilização e o Figma para prototipação dos meus projetos. Minha abordagem une código limpo e boas práticas de UI/UX, sempre buscando entregar experiências agradáveis e eficientes aos usuários.</p>
+                    <br>
+                <p>Também possuo experiência prática com Git e GitHub para versionamento de código e colaboração em projetos. Meu foco é crescer na área, desenvolver soluções inovadoras e continuar aprimorando minhas habilidades para me tornar um profissional cada vez mais completo.</p>
+                    <br>
+                <p>Atualmente, estou em busca de um estágio ou uma oportunidade como desenvolvedor Front-End júnior para aplicar meus conhecimentos, aprender com novos desafios e contribuir para projetos reais.</p>
+                    <br>
+                <p>🚀 Vamos construir algo incrível juntos?</p>
                 <div class="icones-description-home">
-                    <a href=""><img src="Imagens/Icones/linkedin.png" class="linkedin" alt=""></a>
-                    <p>aksdjlahsdj@gmail.com</p>
+                    <a href="https://www.linkedin.com/in/alexmunizribeiro/" target="_blank"><img src="Imagens/Icones/linkedin.png" class="linkedin" alt=""></a>
+                    <p>devalexbrenomuniz@gmail.com</p>
                 </div>
             </div>
         </div>
     </section>
 </body>
+<footer class="container-footer flex-center">
+    <div class="footer-text">
+        <p>&copy; Alex Muniz. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="Javascript/script.js"></script>
+<script>
+    AOS.init({
+        easing: "ease-out-quart",
+        duration: 1000,
+        once: true
+    });
+</script>
 </html>

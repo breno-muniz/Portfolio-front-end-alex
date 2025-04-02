@@ -48,7 +48,7 @@ const projetos = [
         tituloButtonGithub: "Ver no Github",
         tituloButtonProjeto: "Ver Projeto",
         tituloModalTec: "Tecnologias ultilizadas",
-        github: "https://github.com/seu-repositorio",
+        github: "https://github.com/breno-muniz/Projeto-U.bank",
         linkProjeto: "https://breno-muniz.github.io/Projeto-U.bank/",
         tecnologies: [
             'Imagens/Icones/Figma.png',
@@ -59,7 +59,7 @@ const projetos = [
         ]
     },
     {
-        titulo: 'Teste Projeto',
+        titulo: 'Conversor de Moedas',
         tituloModalTec: "Tecnologias ultilizadas",
         descricao: 'testestesttestsetseestestest',
         img: 'Imagens/projetos/U.bank.png',

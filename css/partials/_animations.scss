@@ -532,15 +532,6 @@
         transform: translate3d(0,-8px,0);
     }
 }
-.lacos-1{
-    opacity: 1;
-}
-.circulo-alto{
-    opacity: 1;
-}
-.circulo-baixo{
-    opacity: 1;
-}
 
 .mais{
     transform-origin: center center;
@@ -559,3 +550,82 @@
         transform: rotate(360deg);
     }
 }
+
+
+//Animation section sobre
+
+.figma{
+    opacity: 1;
+    cursor: pointer;
+    animation: figma-transition 6s ease infinite alternate;
+}
+
+@keyframes figma-transition{
+    0%{
+        transform: translate3d(0, 0,0);
+    }
+    50%{
+        transform: translate3d(0, 28px,0);
+    }
+    100%{
+        transform: translate3d(0,-28px,0);
+    }
+}
+
+.sass{
+    opacity: 1;
+    transform-origin: center center;
+    transform-box: fill-box;
+    animation: sass-transition 6s ease 2s infinite alternate;
+}
+
+@keyframes sass-transition{
+    0%{
+        transform: translate3d(0, 0,0);
+    }
+    50%{
+        transform: translate3d(0, 12px,0) rotate(360deg);
+    }
+    100%{
+        transform: translate3d(0,0,0);
+    }
+}
+
+.git{
+    opacity: 1;
+    animation: git-transition 6s ease 4s infinite alternate;
+    transform-origin: center center;
+    transform-box: fill-box;
+}
+
+@keyframes git-transition{
+    0%{
+        transform: translate3d(0, 0,0);
+    }
+    50%{
+        transform: translate3d(0, 8px,0) rotate(360deg);
+    }
+    100%{
+        transform: translate3d(0,-8px,0);
+    }
+}
+
+.react{
+    transform-origin: center center;
+    transform-box: fill-box;
+    cursor: pointer;
+    animation: react-transition 6s ease 3s infinite alternate;
+}
+
+@keyframes react-transition{
+    0%{
+        transform: translate3d(0, 0,0);
+    }
+    50%{
+        transform: translate3d(0, -28px,0);
+    }
+    100%{
+        transform: translate3d(0,28px,0) rotate(360deg);
+    }
+}
+

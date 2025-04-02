@@ -168,7 +168,7 @@
 
 @media screen and (max-width: 960px) {
   .description-home svg {
-    max-width: 100%;
+    width: 100%;
     height: 100%;
   }
 }
@@ -180,7 +180,7 @@
 }
 @media screen and (max-width: 540px) {
   .image-home {
-    width: 250px;
+    width: 350px;
     height: 300px;
     align-items: center;
   }
@@ -387,71 +387,59 @@
     max-width: 100%;
     flex-direction: column;
     min-height: 100vh;
+    margin-top: 128px;
   }
 }
 
 .content-img-sobre {
-  /*border: 1px solid green;*/
   position: relative;
-  width: 100%;
+  width: 80%;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+}
+@media screen and (max-width: 960px) {
+  .content-img-sobre {
+    height: 50vh;
+  }
 }
 
 .img-sobre {
   position: relative;
   z-index: 2;
 }
-
-.icones-sobre {
-  position: absolute;
-  top: 0;
+@media screen and (max-width: 960px) {
+  .img-sobre svg {
+    width: 460px;
+    height: 460px;
+  }
 }
 
-.sass {
-  position: absolute;
-  top: 126px;
-  right: -464px;
-}
-
-.git {
-  position: absolute;
-  top: 354px;
-  right: -261px;
-}
-
-.react {
-  position: absolute;
-  top: 126px;
-  right: -64px;
-}
-
-.figma {
-  position: absolute;
-  top: -61px;
-  right: -262px;
-}
-
-.circles-sobre {
+.lines-sobre {
   position: absolute;
   z-index: 1;
 }
-@media screen and (max-width: 540px) {
-  .circles-sobre {
+@media screen and (max-width: 960px) {
+  .lines-sobre {
     display: none;
   }
 }
 
 .description-sobre {
   /*border: 1px solid yellow;*/
-  max-width: 100%;
+  max-width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  z-index: 10;
+}
+@media screen and (max-width: 960px) {
+  .description-sobre {
+    min-height: 100vh;
+    justify-content: flex-start;
+  }
 }
 
 .icones-description-home {
@@ -465,6 +453,13 @@
 }
 .icones-description-home img:hover {
   transform: scale(1.1);
+}
+
+.container-footer {
+  width: 100%;
+  max-width: 100%;
+  height: 48px;
+  background-color: #06121F;
 }
 
 h1 {
@@ -540,13 +535,13 @@ h5 {
 p {
   color: #E6F1FF;
   font-family: "Rubik", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 130%;
 }
 @media screen and (max-width: 960px) {
   p {
     font-family: "Rubik", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 130%;
   }
 }
@@ -559,13 +554,13 @@ p {
 strong {
   color: #06121F;
   font-family: "Rubik", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 130%;
 }
 @media screen and (max-width: 960px) {
   strong {
     font-family: "Rubik", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 130%;
   }
 }
@@ -1847,18 +1842,6 @@ header {
     transform: translate3d(0, -8px, 0);
   }
 }
-.lacos-1 {
-  opacity: 1;
-}
-
-.circulo-alto {
-  opacity: 1;
-}
-
-.circulo-baixo {
-  opacity: 1;
-}
-
 .mais {
   transform-origin: center center;
   transform-box: fill-box;
@@ -1873,5 +1856,76 @@ header {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+.figma {
+  opacity: 1;
+  cursor: pointer;
+  animation: figma-transition 6s ease infinite alternate;
+}
+
+@keyframes figma-transition {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, 28px, 0);
+  }
+  100% {
+    transform: translate3d(0, -28px, 0);
+  }
+}
+.sass {
+  opacity: 1;
+  transform-origin: center center;
+  transform-box: fill-box;
+  animation: sass-transition 6s ease 2s infinite alternate;
+}
+
+@keyframes sass-transition {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, 12px, 0) rotate(360deg);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.git {
+  opacity: 1;
+  animation: git-transition 6s ease 4s infinite alternate;
+  transform-origin: center center;
+  transform-box: fill-box;
+}
+
+@keyframes git-transition {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, 8px, 0) rotate(360deg);
+  }
+  100% {
+    transform: translate3d(0, -8px, 0);
+  }
+}
+.react {
+  transform-origin: center center;
+  transform-box: fill-box;
+  cursor: pointer;
+  animation: react-transition 6s ease 3s infinite alternate;
+}
+
+@keyframes react-transition {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -28px, 0);
+  }
+  100% {
+    transform: translate3d(0, 28px, 0) rotate(360deg);
   }
 }/*# sourceMappingURL=style.css.map */

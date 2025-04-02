@@ -196,7 +196,7 @@ $container-s: 540px;
 .description-home{
     svg{
         @include responsive(s){
-            max-width: 100%;
+            width: 100%;
             height: 100%;
         }
         
@@ -210,7 +210,7 @@ $container-s: 540px;
     z-index: 5826;
 
     @include responsive(xs){
-        width: 250px;
+        width: 350px;
         height: 300px;
         align-items: center;
     }
@@ -419,76 +419,65 @@ $container-s: 540px;
         max-width: 100%;
         flex-direction: column;
         min-height: 100vh;
+
+        margin-top: 128px;
     }
 }
 
 .content-img-sobre{
-    /*border: 1px solid green;*/
     position: relative;
-    width: 100%;
+    width: 80%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    @include responsive(s){
+        height: 50vh;
+    }
 }
 
 .img-sobre{
     position: relative;
     z-index: 2;
-}
-
-.icones-sobre{
-    position: absolute;
-    top: 0;
-}
-
-.sass{
-    position: absolute;
-    top: 126px;
-    right: -464px;
-}
-
-.git{
-    position: absolute;
-    top: 354px;
-    right: -261px;
-}
-
-.react{
-    position: absolute;
-    top: 126px;
-    right: -64px;
-}
-
-.figma{
-    position: absolute;
-    top: -61px;
-    right: -262px;
+    svg{
+        @include responsive(s){
+            width: 460px;
+            height: 460px;
+        }
+    }
 }
 
 
-.circles-sobre{
+
+
+.lines-sobre{
     position: absolute;
     z-index: 1;
-    
-    @include responsive(xs){
+    @include responsive(s){
         display: none;
     }
 }
 
 .description-sobre{
     /*border: 1px solid yellow;*/
-    max-width: 100%;
+    max-width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    z-index: 10;
+    
+
+    @include responsive(s){
+        min-height: 100vh;
+        justify-content: flex-start;
+    }
 }
 
 .icones-description-home{
     display: flex;
     align-items: center;
+    
     img{
         width: 64px;
         height: 64px;
@@ -499,4 +488,12 @@ $container-s: 540px;
     }
     
     
+}
+
+// Footer
+.container-footer{
+    width: 100%;
+    max-width: 100%;
+    height: 48px;
+    background-color: $primary-dark;
 }
