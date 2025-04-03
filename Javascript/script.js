@@ -31,6 +31,7 @@ showMenu('bx', 'menu-mobile');
 // MODAL
 const buttons = document.querySelectorAll('.button-modal');
 const modal = document.getElementById('mymodal');
+const modalContent = document.getElementById('modal-content');
 const close = document.querySelector('.close');
 const modalTitle = document.getElementById('modal-title');
 const imgModal = document.getElementById('img-modal');
@@ -111,6 +112,7 @@ close.addEventListener('click', () => {
 });
 
 modal.addEventListener('click', (event) => {
+    console.log(event.target);
     if (event.target === modal) {
         modal.classList.remove('modal-active');
 
@@ -119,5 +121,11 @@ modal.addEventListener('click', (event) => {
     }
 });
 
+modalContent.addEventListener('click', (event)=>{
+    if (event.target === modalContent) {
+        modal.classList.remove('modal-active');
+        document.body.style.overflow = "auto";
+    }
+})
 
 

@@ -555,7 +555,7 @@
 //Animation section sobre
 
 .figma{
-    opacity: 1;
+
     cursor: pointer;
     animation: figma-transition 6s ease infinite alternate;
 }
@@ -573,7 +573,8 @@
 }
 
 .sass{
-    opacity: 1;
+    cursor: pointer;
+    
     transform-origin: center center;
     transform-box: fill-box;
     animation: sass-transition 6s ease 2s infinite alternate;
@@ -592,10 +593,11 @@
 }
 
 .git{
-    opacity: 1;
+    
     animation: git-transition 6s ease 4s infinite alternate;
     transform-origin: center center;
     transform-box: fill-box;
+    cursor: pointer;
 }
 
 @keyframes git-transition{

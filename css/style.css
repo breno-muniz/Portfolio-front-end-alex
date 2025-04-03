@@ -183,6 +183,7 @@
     width: 350px;
     height: 300px;
     align-items: center;
+    margin-top: 120px;
   }
 }
 
@@ -411,8 +412,8 @@
 }
 @media screen and (max-width: 960px) {
   .img-sobre svg {
-    width: 460px;
-    height: 460px;
+    width: 380px;
+    height: 380px;
   }
 }
 
@@ -452,7 +453,7 @@
   transition: transform 0.8s ease;
 }
 .icones-description-home img:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .container-footer {
@@ -949,7 +950,7 @@ strong {
   opacity: 1;
   pointer-events: all;
   z-index: 999999;
-  visibility: visible; /* Garantir que a visibilidade esteja ativada */
+  visibility: visible;
 }
 
 .modal-content {
@@ -963,11 +964,13 @@ strong {
   justify-content: center;
   align-items: center;
   gap: 16px;
-  overflow-y: auto;
 }
 @media screen and (max-width: 960px) {
   .modal-content {
-    min-height: 100vh;
+    overflow-y: auto;
+    min-height: 100dvh;
+    max-height: 100vh;
+    width: 100%;
   }
 }
 
@@ -978,7 +981,6 @@ strong {
   align-items: center;
   border: 1px solid #0A192F;
   width: 100%;
-  min-height: auto;
   gap: 16px;
 }
 @media screen and (max-width: 960px) {
@@ -1065,11 +1067,16 @@ strong {
 .img-modal {
   width: 90%;
   height: auto;
-  margin: 0 auto;
+}
+@media screen and (max-width: 960px) {
+  .img-modal {
+    margin-top: 128px;
+  }
 }
 .img-modal img {
   max-width: 100%;
   background-size: cover;
+  background-position: center;
 }
 
 .button-projeto {
@@ -1213,7 +1220,7 @@ header {
   align-items: center;
   opacity: 0;
   pointer-events: none;
-  transform: translate3d(0, -100px, 0);
+  transform: translate3d(0, -80px, 0);
 }
 
 .active-menu-mobile {
@@ -1859,7 +1866,6 @@ header {
   }
 }
 .figma {
-  opacity: 1;
   cursor: pointer;
   animation: figma-transition 6s ease infinite alternate;
 }
@@ -1876,7 +1882,7 @@ header {
   }
 }
 .sass {
-  opacity: 1;
+  cursor: pointer;
   transform-origin: center center;
   transform-box: fill-box;
   animation: sass-transition 6s ease 2s infinite alternate;
@@ -1894,10 +1900,10 @@ header {
   }
 }
 .git {
-  opacity: 1;
   animation: git-transition 6s ease 4s infinite alternate;
   transform-origin: center center;
   transform-box: fill-box;
+  cursor: pointer;
 }
 
 @keyframes git-transition {
