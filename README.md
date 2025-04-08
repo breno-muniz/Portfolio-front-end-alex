@@ -1,5 +1,5 @@
 # Portfólio Front-End - Alex Breno
-[![Preview do Portfólio](./assets/portfolio.prev.png)](https://breno-muniz.github.io/Portfolio-front-end-alex/)
+[![Preview do Portfólio](Assets/portfolioprev.png)](https://breno-muniz.github.io/Portfolio-front-end-alex/)
 
 
 
