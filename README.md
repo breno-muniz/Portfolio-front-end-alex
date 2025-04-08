@@ -1,6 +1,6 @@
 # Portfólio Front-End - Alex Breno
+[![Preview do Portfólio](https://i.imgur.com/seuPreview.png)](https://breno-muniz.github.io/Portfolio-front-end-alex/)
 
-![Preview do Portfólio](https://user-images.githubusercontent.com/000000000/preview.png)
 
 Este é o meu portfólio como desenvolvedor Front-End. Desenvolvido com foco em **performance**, **acessibilidade** e **boas práticas de UI/UX**, utilizando tecnologias modernas como **React.js**, **SASS** e **componentização inteligente**.
 
@@ -26,7 +26,7 @@ Este é o meu portfólio como desenvolvedor Front-End. Desenvolvido com foco em 
 
 ## 🔗 Link do projeto no ar
 
-[👉 Acesse meu portfólio online]([https://breno-muniz.github.io/Portfolio-front-end-alex/])
+👉 Acesse meu portfólio online [https://breno-muniz.github.io/Portfolio-front-end-alex/]
 
 ---
 
